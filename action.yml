@@ -1,0 +1,28 @@
+name: 'Deploy to Server'
+description: 'Deploy code and files to a server using SSH.'
+inputs:
+  host:
+    description: 'Server IP or hostname'
+    required: true
+  username:
+    description: 'SSH Username'
+    required: true
+  password:
+    description: 'SSH Password'
+    required: true
+  source:
+    description: 'Directory to deploy from'
+    required: true
+    default: './'
+  destination:
+    description: 'Directory on the server to deploy to'
+    required: true
+    default: '/var/www/app'
+
+runs:
+  using: 'node12'
+  main: 'index.js'
+
+branding:
+  icon: 'server'
+  color: 'blue'
