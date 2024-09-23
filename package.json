@@ -1,0 +1,9 @@
+{
+  "name": "deploy-using-ftp",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "ssh2-sftp-client": "^7.0.0"
+  }
+}
