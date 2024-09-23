@@ -17,7 +17,7 @@ inputs:
   destination:
     description: 'Directory on the server to deploy to'
     required: true
-    default: '/var/www/app'
+   
 
 runs:
   using: 'node12'
